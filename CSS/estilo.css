@@ -1,0 +1,240 @@
+body{
+font-family: "quicksand";    
+background-color: rgb(88, 37, 37);
+margin: 10px;
+}
+
+@font-face {
+    font-family: 'quicksand';
+    src: url(../fonts/quicksand.ttf);
+}
+
+.contenedor{
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4 auto);
+    
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer,
+.contenedor .collage {
+    background-color: white;
+    padding: 40px;
+    border-radius: 13px;
+}
+
+.contenedor .header {
+    background-color: grey;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+}
+
+
+h1{ 
+font-size: large;
+color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height:80px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 10px;
+    color: white;
+}
+
+
+
+.contenedor .contenido {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .sidebar{
+    background-color: rgb(29, 29, 29);
+    grid-column: span 3;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: span 2;
+}
+
+.contenedor .imagen{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 30px;
+    border-radius: 40px;
+
+}
+   
+.contenedor .widget-1{
+    display: grid;
+    grid-column: span 2;
+    
+}
+
+.widget-1 .h3{
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor .widget-2{
+    background-color: rgb(29, 29, 29);
+    display: grid;
+    grid-column: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 13px;
+
+
+}
+
+.contenedor .widget-3{
+    display: grid;
+    grid-column: span 3;
+    
+}
+
+.contenedor .widget-4{
+    display: grid;
+    grid-column: span 4;
+    color: white;
+    background-color: rgb(29, 29, 29)
+    
+    
+}
+
+.widget-2 .h3{
+    display: grid;
+    justify-content: center;
+}
+
+.widget-4 .h3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.collage .h3{
+    display: grid;
+    justify-content: center;
+}
+
+
+.contenedor .widget-5{
+    display: grid;
+    grid-column: span 2;
+    
+}
+
+.contenedor .widget-6{
+    display: grid;
+    grid-column: span 1;
+    background-color: rgb(29, 29, 29);
+    
+}
+
+.contenedor .collage {
+    background-color: rgb(29, 29, 29);
+    grid-column: span 3;
+    text-align: center;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100px;
+    grid-row: span 2;
+    color: white;
+}
+
+
+
+.contenedor .footer{
+    
+    grid-column: span 3;
+    background-color:  grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    min-height: 70px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+.red {
+
+    display: flex;
+    align-items:center;
+    height: 150px;
+    padding: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar{
+        grid-column: span 2;
+        flex-direction: column;
+    }
+
+    .contenedor .widget-1 {
+        grid: column 1px;
+        justify-content: center;
+    }
+
+    .header{
+        flex-direction: column;
+
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+    
+    .imagen{
+
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+
+
+
